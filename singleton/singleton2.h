@@ -12,7 +12,6 @@ class singleton
     static singleton* getInstance()
     {
       pthread_once(&ponce_, singleton::init);
-
     }
 
     ~singleton()
