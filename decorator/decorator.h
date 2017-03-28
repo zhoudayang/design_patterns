@@ -82,3 +82,23 @@ class ConcreteDecoratorB : public Decorator
       cout << "this is the added operation of ConcreteDecoratorB" << endl;
     }
 };
+
+class ConcreteDecoratorC : public ConcreteDecoratorA
+{
+  public:
+    explicit ConcreteDecoratorC(const std::shared_ptr<Component>& component)
+      : ConcreteDecoratorA(component)
+    { }
+
+    virtual void operation() override
+    {
+      // 新增属性
+      added_operation();
+      ConcreteDecoratorA::operation();
+    }
+
+    void added_operation()
+    {
+      cout << "this is the added operation of ConcreteDecoratorC" << endl;
+    }
+};
