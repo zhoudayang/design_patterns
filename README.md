@@ -4,3 +4,4 @@ learning from bool ```<<Desing Patterns>>``` and write code in C++.
 
 1. singleton
 2. strategy
+3. observer
