@@ -6,3 +6,4 @@ learning from bool ```<<Desing Patterns>>``` and write code in C++.
 2. strategy
 3. observer
 4. decorator
+5. factory
