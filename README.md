@@ -11,3 +11,4 @@ learning from bool ```<<Desing Patterns>>``` and write code in C++.
 7. adapter
 8. facade 
 9. template
+10. state
