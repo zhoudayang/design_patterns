@@ -6,6 +6,7 @@
 using std::cout;
 using std::endl;
 using std::shared_ptr;
+using std::make_shared;
 
 class Worker;
 
@@ -83,8 +84,8 @@ class Worker
 
     void init_state()
     {
-      workingState_ = shared_ptr<State>(new WorkingState(this));
-      restState_ = shared_ptr<State>(new RestState(this));
+      workingState_ = make_shared<WorkingState>(this);
+      restState_ = make_shared<RestState>(this);
       if(hour_ >= 8 && hour_ <= 17)
       {
         curState_ = workingState_;
